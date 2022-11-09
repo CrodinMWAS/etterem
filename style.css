@@ -15,18 +15,17 @@
 }
 
 .menu {
-    padding: 5px;
+    width: 111px;
+    height: 40px;
     background-color: rgb(218, 91, 0);
-    color: rgb(73, 73, 73);
+    color: white;
     text-decoration: none;
 }
 .menu:hover {
     text-decoration: none;
     background-color: rgb(207, 131, 76);
     color: white;
-}
-nav a {
-    width: 500px;
+    cursor: pointer;
 }
 
 header {
