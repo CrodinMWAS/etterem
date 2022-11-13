@@ -201,3 +201,13 @@ footer {
         width: 700px;
     }
 }
+.index button{
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+    margin: auto;
+}
+.index{
+    text-align: center;
+    padding: 10px;
+}
