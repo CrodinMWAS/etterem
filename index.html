@@ -10,37 +10,69 @@
     <link rel="icon" type="image/x-icon" href="Mechwart_Etterem.svg">
 </head>
 
-<body>
+<body onload="megnyit()">
     <header>
         <a href="index.html">
             <img src="Mechwart_Etterem.svg" alt="Mechwart Étterem Logo" id="logo" width="75px" height="75px">
         </a>
         <h1 id="title">Mechwart Étterem</h1>
-        <nav>
-            <a href="index.html"><button class="menu">Kezdőlap</button></a>
-            <a href="etelek.html"><button class="menu">Ételek</button></a>
-            <a href="italok.html"><button class="menu">Italok</button></a>
-            <a href="napimenu.html"><button class="menu">Napi menű</button></a>
-            <a href="elerhetoseg.html"><button class="menu">Elérhetőségek</button></a>
-        </nav>
+        <ul id="menu">
+            <li><a href="index.html"><button class="menu">Kezdőlap</button></a></li>
+            <li><a href="etelek.html"><button class="menu">Ételek</button></a></li>
+            <li><a href="italok.html"><button class="menu">Italok</button></a></li>
+            <li><a href="napimenu.html"><button class="menu">Napi menü</button></a></li>
+            <li><a href="elerhetoseg.html"><button class="menu">Elérhetőségek</button></a></li>
+        </ul>
     </header>
 
     <main>
-        <h1 class="index">Üdvözöljük a Mechwart Étterem weboldalán!</h1>
-        <div class="index">
-            <a href="etelek.html"><button class="menu">Ételek</button></a><br><br>
-            <a href="italok.html"><button class="menu">Italok</button></a><br><br>
-            <a href="napimenu.html"><button class="menu">Napi menű</button></a><br><br>
-            <a href="elerhetoseg.html"><button class="menu">Elérhetőségek</button></a>
-        </div>
+        <h1 id="foszoveg">"A Mechwart Étterem egy jó hely!"</h1>
+        <h3 id="gondolat">- idézve egyik kedves Vendégünktől</h3>
+
+        <h2 id="miert">Miért is válasszon minket?</h2>
+        <table id="okok">
+            <tr>
+                <td>
+                    <img src="hazhozszallitas.png" alt="házhozszállítás" width="48px" height="48px">
+                </td>
+                <td>
+                    <img src="minoseg.png" alt="minőség" width="48px" height="48px">
+                </td>
+                <td>
+                    <img src="kedvezo.png" alt="Kedvező ár" width="48px" height="48px"></img>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3 class="ok">Díjmentes házhozszállítás</h3>
+                    <h4>Debrecen <i><u>egész</i></u> területén díjtalanul kiszáltjuk rendelését! Rendelését leadhatja <a href="elerhetoseg.html">Elérhetőség</a>eink valamelyikén
+                    </h4>
+                </td>
+                <td>
+                    <h3 class="ok">Rendkívüli minőség</h3>
+                    <h4>Ételeink a legmegfelelőbb minőségű hazai hozzávalókból készülnek!</h4>
+                </td>
+                <td>
+                    <h3 class="ok">Kedvező árak</h3>
+                    <h4>Éttermünk alapításánál egyik fő szempont volt, hogy az árak mindenki pénztárcájának megfelelő legyen!</h4>
+                </td>
+            </tr>
+        </table>
     </main>
 
-
-    <footer>
+    <footer style="position: fixed;">
         <p id="nyilatkozat">
             Tájékoztatjuk Kedves Vendégeinket, hogy az áraink Ft-ban értendőek, magukban foglalják az ÁFÁ-t, és nem
             tartalmazzák a szervízdíjat.
+            <br>
+            Mechwart Étterem ©️
+            <br><br>
+            Kövessen bennünket közösségi oldalainkon!
         </p>
+        <a href="#"><img src="facebook.png" alt="facebbok"></a>
+        <a href="#"><img src="youtube.png" alt="youtube"></a>
+        <a href="#"><img src="insta.png" alt="insta"></a>
+        <a href="#"><img src="tiktok.png" alt="tiktok"></a>
     </footer>
 
     <script src="script.js"></script>

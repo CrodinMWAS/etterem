@@ -5,8 +5,11 @@ var leves_lista = ["babgulyas", "borsoleves", "tyukhusleves", "jokaibableves", "
 var foetel_lista = ["gyrostal", "brassoi", "ciganypecsenye", "rantottcsirkemell", "rantottsajt", "holsteinszelet", "rantottkaraj", "tejszinescsirkemell"]
 var desszert_lista = ["gesztenyepure", "dobostorta", "gofri", "csoroge", "palacsinta", "sajttorta", "tiramisu", "somloi"]
 
-function kivalaszt(xd, kategoria) {
+function megnyit() {
+    document.getElementsByTagName("*").style = "transform: rotate(360deg)";
+}
 
+function kivalaszt(xd, kategoria) {
     if (kategoria == "leves") {
         if(i == 0){
             for(let i = 0; i < leves_lista.length; i++){
