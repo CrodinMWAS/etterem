@@ -92,3 +92,9 @@ function kivalaszt(xd, kategoria) {
         }
     }
 }
+function rendel() {
+    alert("Rendelését rögzítettük!")
+}
+function elkuld() {
+    alert("Sikeres kapcsolatfelvétel!")
+}

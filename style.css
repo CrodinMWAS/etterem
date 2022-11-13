@@ -78,20 +78,7 @@ footer img {
     text-align: center;
     font-style: italic;
 }
-#miert {
-    text-align: center;
-    margin: 20px 0;
-}
-#okok {
-    width: 60%;
-    margin: auto;
-    text-align: center;
-}
-#okok td {
-    width: 20%;
-    vertical-align: top;
-}
-#okok img {
+.okdiv img {
     border-bottom: 2px solid rgb(197, 89, 0);
     vertical-align: bottom;
 }
@@ -192,18 +179,62 @@ footer img {
 }
 
 /* elerhetoseg.html */
-#kapcsolat {
+#kapcsolat, #uzenet {
     width: 50%;
-    padding: 0 100px;
-    text-align: center;
+    vertical-align: top;
 }
 #info {
-    width: 100%;
+    width: 50%;
     height: 500px;
     margin: auto;
 }
+form h4 {
+    margin-top: 15px;
+}
+form input {
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    background-color: rgba(245, 222, 178);
+}
+form textarea {
+    font-size: 18px;
+    background-color: rgba(245, 222, 178);
+}
+form button {
+    width: 125px;
+    height: 30px;
+    font-size: 14px;
+    margin-top: 15px;
+    background-color: rgb(253, 203, 109);
+}
+form button:hover {
+    cursor: pointer;
+    background-color: rgb(253, 171, 17);
+}
 
 @media screen and (max-width:705px)  {
+    #okok {
+        text-align: center;
+    }
+    #miert {
+        text-align: center;
+        margin: 20px 0;
+    }
+    #uzenet {
+        margin-top: 30px;
+    }
+    #info tr td {
+        display: block;
+    }
+    footer {
+        bottom: 0;
+        width: 100%;
+        height: 300px;
+        background-color: rgb(224, 146, 72);
+        text-align: center;
+        position: relative;
+    }
     #menu li {
         display: inline;
         margin: 10px 0;
@@ -213,7 +244,7 @@ footer img {
     .mapouter {
         width: 300px;
         height: 250px;
-        margin: auto;
+        margin: 30px auto;
         border: 1px solid black;
     }
     iframe {
@@ -244,5 +275,20 @@ footer img {
         background: none !important;
         height: 300px;
         width: 700px;
+    }
+    .okdiv {
+        width: 20%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    #okok {
+        text-align: center;
+    }
+    #miert {
+        text-align: center;
+        margin: 20px 0;
+    }
+    footer {
+        position: fixed;
     }
 }
