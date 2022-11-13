@@ -288,7 +288,7 @@ form button:hover {
         text-align: center;
         margin: 20px 0;
     }
-    footer {
+    #indexfooter {
         position: fixed;
     }
 }
