@@ -1,26 +1,28 @@
 var i = 0;
 var j = 0;
 var k = 0;
-var t = ["babgulyas", "borsoleves", "tyukhusleves", "jokaibableves", "paradicsomleves", "gyumolcsleves", "malnakremleves", "lebbencsleves"];
+var leves_lista = ["babgulyas", "borsoleves", "tyukhusleves", "jokaibableves", "paradicsomleves", "gyumolcsleves", "malnakremleves", "lebbencsleves"];
 var foetel_lista = ["gyrostal", "brassoi", "ciganypecsenye", "rantottcsirkemell", "rantottsajt", "holsteinszelet", "rantottkaraj", "tejszinescsirkemell"]
 var desszert_lista = ["gesztenyepure", "dobostorta", "gofri", "csoroge", "palacsinta", "sajttorta", "tiramisu", "somloi"]
 
-function kivalaszt(xd, text) {
+function kivalaszt(xd, kategoria) {
 
-    if (text == "leves") {
+    if (kategoria == "leves") {
         if(i == 0){
-            for(let i = 0; i < t.length; i++){
-                document.getElementById(t[i]).style.backgroundColor ="red";
+            for(let i = 0; i < leves_lista.length; i++){
+                document.getElementById(leves_lista[i]).style.backgroundColor ="red";
             }
 
-            document.getElementById("levesek").style.color = "green";
+            document.getElementById("levesek").style.backgroundColor = "lightgreen";
+            document.getElementById("levesek").innerHTML = "Levesek ✅";
         }
         else {
-            for(let i = 0; i < t.length; i++){
-                document.getElementById(t[i]).style.backgroundColor ="white";
+            for(let i = 0; i < leves_lista.length; i++){
+                document.getElementById(leves_lista[i]).style.backgroundColor ="white";
             }
 
-            document.getElementById("levesek").style.color = "black";
+            document.getElementById("levesek").style.backgroundColor = "transparent";
+            document.getElementById("levesek").innerHTML = "Levesek";
         }
 
         if(i == 0) {
@@ -32,20 +34,22 @@ function kivalaszt(xd, text) {
             i--;
         }
     }
-    else if (text == "foetel") {
+    else if (kategoria == "foetel") {
         if(j == 0){
             for(let i = 0; i < foetel_lista.length; i++){
                 document.getElementById(foetel_lista[i]).style.backgroundColor ="red";
             }
 
-            document.getElementById("foetelek").style.color = "green";
+            document.getElementById("foetelek").style.backgroundColor = "lightgreen";
+            document.getElementById("foetelek").innerHTML = "Főételek ✅";
         }
         else {
             for(let i = 0; i < foetel_lista.length; i++){
                 document.getElementById(foetel_lista[i]).style.backgroundColor ="white";
             }
 
-            document.getElementById("foetelek").style.color = "black";
+            document.getElementById("foetelek").style.backgroundColor = "transparent";
+            document.getElementById("foetelek").innerHTML = "Főételek";
         }
 
         if(j == 0) {
@@ -63,14 +67,16 @@ function kivalaszt(xd, text) {
                 document.getElementById(desszert_lista[i]).style.backgroundColor ="red";
             }
 
-            document.getElementById("desszert").style.color = "green";
+            document.getElementById("desszert").style.backgroundColor = "lightgreen";
+            document.getElementById("desszert").innerHTML = "Desszertek ✅";
         }
         else {
             for(let i = 0; i < desszert_lista.length; i++){
                 document.getElementById(desszert_lista[i]).style.backgroundColor ="white";
             }
 
-            document.getElementById("desszert").style.color = "black";
+            document.getElementById("desszert").style.backgroundColor = "transparent";
+            document.getElementById("desszert").innerHTML = "Desszertek";
         }
 
         if(k == 0) {
