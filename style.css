@@ -45,7 +45,6 @@ footer img {
     width: 96px;
     height: 96px;
 }
-
 #title {
     margin-bottom: 10px;
 }
@@ -55,9 +54,14 @@ footer img {
     font-size: 20px;
     margin-bottom: 10px;
 }
-
+#menu {
+    margin: auto;
+    width: 50%;
+    background-color: rgb(218, 91, 0);
+}
 .menu {
-    width: 111px;
+    border: none;
+    width: 125px;
     height: 40px;
     font-size: 15px;
     background-color: rgb(218, 91, 0);
@@ -70,7 +74,6 @@ footer img {
     background-color: rgb(245, 222, 178);
     color: black;
     cursor: pointer;
-    transition: 0.5s;
 }
 
 /* index.html */
@@ -86,6 +89,13 @@ footer img {
     margin-bottom: 15px;
     text-transform: uppercase;
 }
+#elerhetoseg {
+    color: rgb(197, 89, 0);
+    text-decoration: none;
+}
+#elerhetoseg:hover {
+    color: rgb(134, 60, 0);
+} 
 
 
 /* etelek.html */
@@ -142,7 +152,7 @@ footer img {
 }
 .menukaja {
     width: 200px;
-    height: 150px;
+    height: 175px;
     margin-top: -10px;
     text-align: center;
     background-color: white;
@@ -166,16 +176,32 @@ footer img {
 ::-webkit-scrollbar { /*google*/
     width: 20px;
 }
-
 ::-webkit-scrollbar-track { /*google*/
     box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
 }
-  
 ::-webkit-scrollbar-thumb { /*google*/
     background: rgb(252, 141, 38);
     border-radius: 10px;
     border: 1px solid black;
+}
+#adatok {
+    width: 50%;
+    height: 350px;
+    margin: auto;
+    text-align: center;
+}
+#adatok h4 {
+    margin-top: 15px;
+}
+#adatok input {
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    background-color: rgba(245, 222, 178);
+}
+#cim {
+    margin-bottom: 15px;
 }
 
 /* elerhetoseg.html */
@@ -188,27 +214,27 @@ footer img {
     height: 500px;
     margin: auto;
 }
-form h4 {
+#info h4 {
     margin-top: 15px;
 }
-form input {
+#info input {
     width: 200px;
     height: 30px;
     font-size: 18px;
     background-color: rgba(245, 222, 178);
 }
-form textarea {
+#info textarea {
     font-size: 18px;
     background-color: rgba(245, 222, 178);
 }
-form button {
+#info button {
     width: 125px;
     height: 30px;
     font-size: 14px;
     margin-top: 15px;
     background-color: rgb(253, 203, 109);
 }
-form button:hover {
+#info button:hover {
     cursor: pointer;
     background-color: rgb(253, 171, 17);
 }
@@ -287,8 +313,5 @@ form button:hover {
     #miert {
         text-align: center;
         margin: 20px 0;
-    }
-    #indexfooter {
-        position: fixed;
     }
 }

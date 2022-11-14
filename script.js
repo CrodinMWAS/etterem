@@ -93,8 +93,27 @@ function kivalaszt(xd, kategoria) {
     }
 }
 function rendel() {
-    alert("Rendelését rögzítettük!")
+    let nev = document.getElementById("nev").value;
+    let tel = document.getElementById("tel").value;
+    let cim = document.getElementById("cim").value;
+    
+    if (nev == "" || tel == "+36 " || cim == "") {
+        alert("Hiányzó adat! Rendelését nem rögzítettük!");
+    }
+    else {
+        alert("Rendelését rögzítettük!");
+    }
 }
+
 function elkuld() {
-    alert("Sikeres kapcsolatfelvétel!")
+    let nev = document.getElementById("nev").value;
+    let email = document.getElementById("email").value;
+    let uzenet = document.getElementById("uzenet").value;
+
+    if (nev == "" || email == "" || uzenet == "") {
+        alert("Hiányzó adat! Sikertelen kapcsolatfelvétel!");
+    }
+    else {
+        alert("Sikeres kapcsolatfelvétel!");
+    }
 }
