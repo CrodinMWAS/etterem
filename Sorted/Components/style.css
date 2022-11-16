@@ -1,0 +1,317 @@
+@keyframes bejovetel { /*w3*/
+    0% {opacity: 0.2;}
+    25% {opacity: 0.4;}
+    50% {opacity: 0.6;}
+    75% {opacity: 0.8;}
+    100% {opacity: 1;}
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation-name: bejovetel;
+    animation-duration: 0.2s;
+}
+
+html { /*google*/
+    background: url("SOURCE/hatter.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+main {
+    margin-top: 30px;
+    background-color: rgba(245, 222, 178, 0.801);
+}
+header {
+    background-color: rgb(253, 200, 151);
+    text-align: center;
+    padding-bottom: 10px;
+}
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 175px;
+    margin-top: 30px;
+    background-color: rgb(224, 146, 72);
+    text-align: center;
+}
+footer img {
+    width: 48px;
+    margin: 0 5px;
+}
+#logo {
+    width: 96px;
+    height: 96px;
+}
+#title {
+    margin-bottom: 10px;
+}
+#nyilatkozat {
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#menu {
+    margin: auto;
+    width: 50%;
+    background-color: rgb(218, 91, 0);
+}
+.menu {
+    border: none;
+    width: 125px;
+    height: 40px;
+    font-size: 15px;
+    background-color: rgb(218, 91, 0);
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.menu:hover {
+    text-decoration: none;
+    background-color: rgb(245, 222, 178);
+    color: black;
+    cursor: pointer;
+}
+
+/* index.html */
+#foszoveg, #gondolat {
+    text-align: center;
+    font-style: italic;
+}
+.okdiv img {
+    border-bottom: 2px solid rgb(197, 89, 0);
+    vertical-align: bottom;
+}
+.ok {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+#elerhetoseg {
+    color: rgb(197, 89, 0);
+    text-decoration: none;
+}
+#elerhetoseg:hover {
+    color: rgb(134, 60, 0);
+} 
+
+
+/* etelek.html */
+#eteltabla {
+    margin: auto;
+    text-align: center;
+    width: 60%;
+}
+#eteltabla td {
+    height: 50px;
+    font-size: 22px;
+}
+#eteltabla th {
+    font-size: 30px;
+}
+
+/* italok.html */
+#italtabla {
+    margin: auto;
+    width: 40%;
+    text-align: center;
+}
+#italtabla td {
+    height: 50px;
+    font-size: 22px;
+}
+#italtabla th {
+    font-size: 30px;
+}
+
+/* napimenu.html */
+.tarolo {
+    text-align: center;
+    width: 50%;
+}
+.sor {
+    margin: 20px auto;
+    text-align: center;
+}
+.masodik {
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: 50%;
+}
+.sor div {
+    display: inline-block;
+    border: 1px solid black;
+}
+.kategoria {
+    padding-bottom: 10px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+.menukaja {
+    width: 200px;
+    height: 175px;
+    margin-top: -10px;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+}
+.menukaja:hover {
+    background-color: rgb(185, 185, 185);
+}
+#rendeles {
+    width: 160px;
+    height: 45px;
+    background-color: rgb(247, 230, 199);
+    display: block;
+    margin: auto;
+    font-size: 25px;
+    cursor: pointer;
+}
+#rendeles:hover {
+    background-color: rgb(253, 203, 109);
+}
+::-webkit-scrollbar { /*google*/
+    width: 20px;
+}
+::-webkit-scrollbar-track { /*google*/
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb { /*google*/
+    background: rgb(252, 141, 38);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+#adatok {
+    width: 50%;
+    height: 350px;
+    margin: auto;
+    text-align: center;
+}
+#adatok h4 {
+    margin-top: 15px;
+}
+#adatok input {
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    background-color: rgba(245, 222, 178);
+}
+#cim {
+    margin-bottom: 15px;
+}
+
+/* elerhetoseg.html */
+#kapcsolat, #uzenet {
+    width: 50%;
+    vertical-align: top;
+}
+#info {
+    width: 50%;
+    height: 500px;
+    margin: auto;
+}
+#info h4 {
+    margin-top: 15px;
+}
+#info input {
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    background-color: rgba(245, 222, 178);
+}
+#info textarea {
+    font-size: 18px;
+    background-color: rgba(245, 222, 178);
+}
+#info button {
+    width: 125px;
+    height: 30px;
+    font-size: 14px;
+    margin-top: 15px;
+    background-color: rgb(253, 203, 109);
+}
+#info button:hover {
+    cursor: pointer;
+    background-color: rgb(253, 171, 17);
+}
+
+@media screen and (max-width:705px)  {
+    #okok {
+        text-align: center;
+    }
+    #miert {
+        text-align: center;
+        margin: 20px 0;
+    }
+    #uzenet {
+        margin-top: 30px;
+    }
+    #info tr td {
+        display: block;
+    }
+    footer {
+        bottom: 0;
+        width: 100%;
+        height: 300px;
+        background-color: rgb(224, 146, 72);
+        text-align: center;
+        position: relative;
+    }
+    #menu li {
+        display: inline;
+        margin: 10px 0;
+        padding: 0;
+        display: block;
+    }
+    .mapouter {
+        width: 300px;
+        height: 250px;
+        margin: 30px auto;
+        border: 1px solid black;
+    }
+    iframe {
+        width: 300px;
+        height: 250px;
+        margin: auto;
+    }
+    .gmap_canvas {
+        width: 300px;
+        height: 250px;
+        margin: auto;
+    }
+}
+@media screen and (min-width:706px)  {
+    #menu li {
+        margin: 0;
+        padding: 0;
+        display: inline;
+    }
+    .mapouter {
+        text-align: center;
+        height: 300px;
+        width: 700px;
+        margin: 20px auto;
+    }
+    .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 300px;
+        width: 700px;
+    }
+    .okdiv {
+        width: 20%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    #okok {
+        text-align: center;
+    }
+    #miert {
+        text-align: center;
+        margin: 20px 0;
+    }
+}
